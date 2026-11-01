@@ -1,7 +1,8 @@
 const fs=require('fs'),path=require('path')
 const root=path.resolve(__dirname,'..')
 const {parse}=require('../engine/javascript.cjs')
-const orig='/tmp/ghdwork/app', built=path.join(root,'build','final')
+const orig=process.argv[2]||process.env.GHD_APP||path.join(root,'.app');
+const built=process.argv[3]||path.join(root,'build','final')
 const files=['main.js','renderer.js','crash.js']
 const out=[]
 // normalize: compare AST after stripping literal VALUES (structure only)

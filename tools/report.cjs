@@ -3,7 +3,7 @@ const root=path.resolve(__dirname,'..')
 const {patch,loadDictionary}=require('../engine/generate.cjs')
 const dict=JSON.parse(fs.readFileSync(path.join(root,'zh-TW','dictionary.json'),'utf8'))
 const entries=loadDictionary(path.join(root,'zh-TW','dictionary.json'))
-const app='/tmp/ghdwork/app'
+const app=process.argv[2]||process.env.GHD_APP||path.join(root,'.app')
 const report={version:'3.6.10',locale:'zh-TW',dictionaryEntries:entries.size,files:{},applied:[],pending:[]}
 for(const f of ['main.js','renderer.js','crash.js']){
   const src=fs.readFileSync(path.join(app,f),'utf8')
