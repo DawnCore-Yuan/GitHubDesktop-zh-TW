@@ -1,0 +1,37 @@
+# 官方安裝包與原版解包
+*.exe
+*.msi
+*.nupkg
+*.zip
+!.gitignore
+app-3.6.10/
+resources/app/
+
+# 建置產物
+build/
+dist/
+package/
+work/
+*.js.map
+
+# 暫存
+*.tmp
+*.zh-stage
+*.zh-previous
+*.bak
+*.orig
+
+# 憑證與本機設定
+.env
+.env.*
+*.pem
+*.key
+id_rsa*
+.git-credentials
+.netrc
+.npmrc
+
+# 系統
+.DS_Store
+Thumbs.db
+node_modules/
