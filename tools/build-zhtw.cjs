@@ -23,5 +23,6 @@ for (const entry of manifest.files) {
 }
 fs.mkdirSync(destination, { recursive: true })
 for (const [file, content] of results) fs.writeFileSync(path.join(destination, file), content)
+fs.mkdirSync(path.join(root, 'work'), { recursive: true })
 fs.writeFileSync(path.join(root, 'work', 'build-summary.json'), JSON.stringify({ version: '3.6.10', locale: 'zh-TW', files: summary }, null, 2) + '\n')
 console.log(JSON.stringify(summary, null, 2))
