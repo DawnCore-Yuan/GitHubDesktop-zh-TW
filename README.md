@@ -7,7 +7,9 @@
 **[下載初步測試版](https://github.com/DawnCore-Yuan/GitHubDesktop-zh-TW/releases/tag/v3.6.10-zh-TW.1-alpha)** · **[回報問題](https://github.com/DawnCore-Yuan/GitHubDesktop-zh-TW/issues)** · **[查看術語表](docs/術語表.md)**
 
 > 🧪 **目前為初步測試版（alpha）。**
-> 已完成建置與靜態檢查，尚未完成 Windows 實機啟動、安裝／還原及操作驗收。詞庫中仍有 1,874 條尚未逐條對照英文校訂。
+> 已由使用者完成 Windows 實機安裝與啟動確認，主畫面及檔案選單可正常顯示繁體中文。
+>
+> 安裝還原、完整 Git 操作流程與其他介面仍待逐項驗收；詞庫中仍有 1,874 條尚未逐條對照英文校訂。
 >
 > 本專案為非官方語言補丁，未獲 GitHub, Inc. 背書，與其無隸屬關係。
 
